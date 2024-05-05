@@ -12,7 +12,7 @@ API for calculating the number of points scored by the winner and the type of hi
 
 ```
 $ git clone https://github.com/kirylrachalovsky/backgammon.git
-$ backgammon
+$ cd backgammon
 ```
 2. Build docker containers:
 ```
