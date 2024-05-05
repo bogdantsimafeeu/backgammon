@@ -13,11 +13,11 @@ from app.tests.conftest import client
     (lazy_fixture('mars_data'), {'points': 2, 'win_type': 'mars'}),
 ])
 def test_check_win_type_service(input_data, expected_result):
-    print(input_data)
     response = client.post(
         '/api/v1/short-game/check-win-type',
         json=input_data
     )
     response_data = json.loads(response.content.decode('utf-8'))
+
     assert response.status_code == 200
     assert response_data == expected_result

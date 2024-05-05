@@ -7,7 +7,7 @@ from app.src.schemas.board import Board
 
 class GameResultInput(BaseModel):
     board: Board
-    start_position: dict       # Must be 0 or 23
+    start_position: dict
 
 
 class GameWinType(str, Enum):
@@ -17,5 +17,5 @@ class GameWinType(str, Enum):
 
 
 class GameResultOutput(BaseModel):
-    points: conint(ge=0)       # Number of points for a win
+    points: conint(ge=0)
     win_type: GameWinType

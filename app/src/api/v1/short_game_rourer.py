@@ -9,7 +9,6 @@ router = APIRouter()
 
 @router.post("/check-win-type", status_code=200)
 def check_win_type_service(game_result: GameResultInput) -> GameResultOutput:
-    response = check_win_type(game_result)
-    return response
+    return check_win_type(game_result)
 
 

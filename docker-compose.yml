@@ -1,7 +1,7 @@
 version: "3.7"
 
 services:
-  todo_app:
+  app:
     container_name: backgammon
     build:
       context: .

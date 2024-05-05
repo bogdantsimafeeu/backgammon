@@ -1,6 +1,6 @@
 from typing import List
 
-from pydantic import BaseModel, UUID4, conint
+from pydantic import BaseModel, conint
 
 
 class BoardPoint(BaseModel):
